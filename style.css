@@ -49,7 +49,7 @@ h1 {
     }
 
     .button-container {
-        flex-direction: column; /* Stapelt die Buttons vertikal */
+        flex-direction: row; /* Stapelt die Buttons vertikal */
         align-items: center; /* Zentriert die Buttons horizontal */
         gap: 10px; /* Verringert den Abstand zwischen den Buttons */
     }
