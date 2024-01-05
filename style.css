@@ -32,7 +32,7 @@ h1 {
     width: 150px; /* oder eine andere gewünschte Breite */
     padding: 10px;
     text-align: center;
-    background-color: #000000;
+    background-color: rgba(178, 239, 103, 0.71);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -40,7 +40,7 @@ h1 {
 }
 
 .button:hover {
-    background-color: #000000;
+    background-color: rgba(178, 239, 103, 0.71);
 }
 
 @media screen and (max-width: 480px) {
