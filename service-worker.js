@@ -1,6 +1,6 @@
-const CACHE_NAME = 'birdiegolf-cache-v3';
+const CACHE_NAME = 'birdiegolf-cache-v2';
 const urlsToCache = [
-    '/',
+    '/birdiegolf',
     '/index.html',
     '/style.css',
     '/main.js',
