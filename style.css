@@ -35,3 +35,27 @@ h1 {
 .button:hover {
     background-color: #000000;
 }
+
+/* Medienabfrage für kleine Geräte (wie iPhone) */
+@media screen and (max-width: 480px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start; /* Ändert die Ausrichtung für kleinere Bildschirme */
+        padding: 10px; /* Fügt etwas Innenabstand hinzu */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Verkleinert die Schriftgröße für den Titel */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stapelt die Buttons vertikal */
+        align-items: center; /* Zentriert die Buttons horizontal */
+        gap: 10px; /* Verringert den Abstand zwischen den Buttons */
+    }
+
+    .button {
+        width: auto; /* Passt die Breite der Buttons an */
+        padding: 8px 20px; /* Anpassung der Polsterung für kleinere Bildschirme */
+    }
+}
