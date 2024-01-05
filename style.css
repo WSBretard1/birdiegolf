@@ -41,7 +41,7 @@ h1 {
     body {
         flex-direction: column;
         justify-content: space-between; /* Sorgt für mehr Abstand zwischen Titel und Buttons */
-        padding: 10px;
+        padding: 5px;
         padding-bottom: 30px; /* Erhöhter Abstand am unteren Rand */
     }
 
