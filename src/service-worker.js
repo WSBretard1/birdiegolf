@@ -1,7 +1,31 @@
-self.addEventListener('install', function(event) {
-    // Perform install steps
+const CACHE_NAME = 'birdiegolf-cache-v1';
+const urlsToCache = [
+    '/',
+    '/index.html',
+    '/style.css',
+    '/main.js',
+    'icon-192x192.png',
+];
+
+self.addEventListener('install', event => {
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then(cache => {
+                console.log('Opened cache');
+                return cache.addAll(urlsToCache);
+            })
+    );
 });
 
-self.addEventListener('fetch', function(event) {
-    // Handle fetch events
+self.addEventListener('fetch', event => {
+    event.respondWith(
+        caches.match(event.request)
+            .then(response => {
+                    if (response) {
+                        return response;
+                    }
+                    return fetch(event.request);
+                }
+            )
+    );
 });
