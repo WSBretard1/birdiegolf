@@ -36,20 +36,18 @@ h1 {
     background-color: #000000;
 }
 
-/* Medienabfrage für kleine Geräte (wie iPhone) */
 @media screen and (max-width: 480px) {
-    body {
-        flex-direction: column;
-        justify-content: space-between; /* Sorgt für mehr Abstand zwischen Titel und Buttons */
-        padding: 5px;
-        padding-bottom: 30px; /* Erhöhter Abstand am unteren Rand */
+    h1 {
+        font-size: 1.5em; /* Beibehalten der Schriftgröße */
+        margin-top: 10px; /* Verringert den oberen Abstand */
+        margin-bottom: 10px; /* Verringert den unteren Abstand */
     }
 
     .button-container {
         flex-direction: column;
         align-items: center;
-        gap: 15px; /* Erhöht den Abstand zwischen den Buttons */
-        margin-top: auto; /* Positioniert die Buttons weiter unten */
+        gap: 15px;
+        margin-top: 0; /* Verringert den Abstand zum oberen Element */
     }
 
     .button {
