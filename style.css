@@ -1,12 +1,37 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Richtung der Hauptachse auf vertikal ändern */
+    justify-content: space-between; /* Gleichmäßiger Abstand oben und unten */
     height: 100vh;
     margin: 0;
 }
 
 h1 {
     color: #334333;
+    margin-top: 20px; /* Etwas Abstand am oberen Rand */
+    text-align: center; /* Zentriert den Titel */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px; /* Etwas Abstand am unteren Rand */
+}
+
+.button {
+    display: block;
+    width: 150px; /* oder eine andere gewünschte Breite */
+    padding: 10px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #000000;
 }
