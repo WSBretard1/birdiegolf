@@ -39,12 +39,12 @@ h1 {
 
 .product-info h2 {
     margin-top: 0;
-    color: #333;
+    color: rgba(0, 35, 0, 0.6);;
     font-size: 1.2em; /* Schriftgröße für den Produkttitel */
 }
 
 .product-info p {
-    color: #555;
+    color: rgba(0, 35, 0, 0.6);;
     font-size: 1em; /* Schriftgröße für die Produktbeschreibung */
 }
 
