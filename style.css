@@ -13,6 +13,13 @@ h1 {
     text-align: center; /* Zentriert den Titel */
 }
 
+.center-icon {
+    display: block;
+    margin: 20px auto; /* Zentriert das Bild und fügt vertikalen Abstand hinzu */
+    max-width: 100px; /* Oder eine andere Größe, die zu Ihrem Design passt */
+    height: auto; /* Behält das Seitenverhältnis des Bildes bei */
+}
+
 .button-container {
     display: flex;
     justify-content: center;
