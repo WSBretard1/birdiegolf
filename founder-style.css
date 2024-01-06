@@ -46,20 +46,16 @@ button:hover {
 }
 
 #ideasList {
-    list-style: none;
+    list-style: disc; /* Aktiviert Standard-Stichpunkte */
     padding: 0;
     width: 90%; /* Anpassung der Breite der Liste */
-    margin: 0 auto; /* Zentriert die Liste */
+    margin: 20px auto; /* Zentriert die Liste und fügt vertikalen Abstand hinzu */
 }
 
 #ideasList li {
-    background-color: white; /* Hellgrün für die aufgelisteten Ideen */
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 35, 0, 0.6); /* Dunkelgrün für den Rahmen */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     text-align: left; /* Text innerhalb der Listenelemente ausrichten */
+    margin-top: 10px;
+    padding-left: 15px; /* Fügt links Platz für die Stichpunkte hinzu */
 }
 
 @media screen and (max-width: 480px) {
