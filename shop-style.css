@@ -30,7 +30,7 @@ h1 {
     width: auto;  /* Breite automatisch anpassen, basierend auf der Höhe */
     height: 150px; /* Höhe des Bildes festlegen, um die Größe zu reduzieren */
     display: block; /* Verhindert, dass das Bild inline angezeigt wird */
-    margin: 0 auto; /* Zentriert das Bild horizontal */
+    margin: 0 auto; /* Zentriert das Bild horizontal adsf*/
 }
 
 .product-info {
