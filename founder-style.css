@@ -8,7 +8,7 @@ body {
 
 h1 {
     color: #008000; /* Grün für den Schriftzug "Ideen" */
-    font-size: 24px; /* Größere Schrift für bessere Lesbarkeit */
+    font-size: 40px; /* Größere Schrift für bessere Lesbarkeit */
     margin-bottom: 20px; /* Abstand zur Eingabebox */
 }
 
@@ -31,7 +31,7 @@ h1 {
 
 button {
     padding: 12px 20px;
-    font-size: 18px; /* Größere Schrift und Polsterung für leichteres Klicken */
+    font-size: 30px; /* Größere Schrift und Polsterung für leichteres Klicken */
     background-color: #008000; /* Dunkelgrün für den Button */
     color: white;
     border: none;
