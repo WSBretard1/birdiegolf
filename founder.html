@@ -2,9 +2,66 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Founder Seite</title>
+    <link rel="stylesheet" href="style-founder.css">
 </head>
 <body>
-<h1>Founder Seite</h1>
+<h1>Ideen</h1>
+<div class="note-input-container">
+    <input type="text" id="noteInput" placeholder="Ihre Idee hier...">
+    <button onclick="addIdea()">Speichern</button>
+</div>
+<ul id="ideasList"></ul>
+
+<script>
+    // Funktion zum Hinzufügen einer Idee
+    function addIdea() {
+        var input = document.getElementById('noteInput');
+        var idea = input.value;
+        input.value = ''; // Eingabefeld leeren
+
+        if (idea.trim() === '') {
+            alert('Bitte geben Sie eine Idee ein.');
+            return;
+        }
+
+        saveIdea(idea); // Speichert die Idee im localStorage und aktualisiert die Liste
+    }
+
+    // Funktion zum Speichern der Idee im localStorage und Aktualisieren der Liste
+    function saveIdea(idea) {
+        var ideas = getIdeas();
+        ideas.push(idea);
+        localStorage.setItem('ideas', JSON.stringify(ideas));
+        renderIdeas();
+    }
+
+    // Funktion zum Abrufen der Ideen aus dem localStorage
+    function getIdeas() {
+        var storedIdeas = localStorage.getItem('ideas');
+        if (storedIdeas) {
+            return JSON.parse(storedIdeas);
+        } else {
+            return [];
+        }
+    }
+
+    // Funktion zum Rendern der Ideen in der Liste
+    function renderIdeas() {
+        var ideas = getIdeas();
+        var list = document.getElementById('ideasList');
+        list.innerHTML = ''; // Liste leeren
+
+        ideas.forEach(function(idea) {
+            var li = document.createElement('li');
+            li.textContent = idea;
+            list.appendChild(li);
+        });
+    }
+
+    // Initialisiere die Anzeige beim Laden der Seite
+    renderIdeas();
+</script>
 </body>
 </html>
