@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    color: #008000; /* Grün für den Schriftzug "Ideen" */
+    color: rgba(0, 35, 0, 0.6); /* Grün für den Schriftzug "Ideen" */
     font-size: 40px; /* Größere Schrift für bessere Lesbarkeit */
     margin-bottom: 20px; /* Abstand zur Eingabebox */
 }
@@ -25,24 +25,24 @@ h1 {
     border: 2px solid #ddd;
     border-radius: 5px;
     width: 100%; /* Volle Breite auf kleinen Bildschirmen */
-    color: #000; /* Dunklere Farbe für bessere Lesbarkeit */
+    color: rgba(0, 35, 0, 0.6); /* Dunklere Farbe für bessere Lesbarkeit */
     margin: 0 0 10px 0; /* Abstand zum Button */
 }
 
 button {
     padding: 12px 20px;
-    font-size: 30px; /* Größere Schrift und Polsterung für leichteres Klicken */
-    background-color: #008000; /* Dunkelgrün für den Button */
+    font-size: 20px; /* Größere Schrift und Polsterung für leichteres Klicken */
+    background-color: rgba(0, 35, 0, 0.6); /* Dunkelgrün für den Button */
     color: white;
     border: none;
     border-radius: 5px;
-    width: 80%; /* Anpassung der Button-Breite */
+    width: 50%; /* Anpassung der Button-Breite */
     cursor: pointer;
     margin: 10px 0; /* Abstand zur Eingabeliste */
 }
 
 button:hover {
-    background-color: #006400; /* Etwas dunkleres Grün für den Hover-Effekt */
+    background-color: rgba(0, 35, 0, 0.6); /* Etwas dunkleres Grün für den Hover-Effekt */
 }
 
 #ideasList {
@@ -53,11 +53,11 @@ button:hover {
 }
 
 #ideasList li {
-    background-color: #90ee90; /* Hellgrün für die aufgelisteten Ideen */
+    background-color: white; /* Hellgrün für die aufgelisteten Ideen */
     padding: 15px;
     margin-top: 10px;
     border-radius: 5px;
-    border: 1px solid #8FBC8F; /* Dunkelgrün für den Rahmen */
+    border: 1px solid rgba(0, 35, 0, 0.6); /* Dunkelgrün für den Rahmen */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     text-align: left; /* Text innerhalb der Listenelemente ausrichten */
 }
