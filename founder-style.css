@@ -24,7 +24,7 @@ h1 {
     font-size: 16px; /* Größere Schrift für bessere Lesbarkeit */
     border: 2px solid #ddd;
     border-radius: 5px;
-    width: 90%; /* Volle Breite auf kleinen Bildschirmen */
+    width: 100%; /* Volle Breite auf kleinen Bildschirmen */
     color: #000; /* Dunklere Farbe für bessere Lesbarkeit */
     margin: 0 0 10px 0; /* Abstand zum Button */
 }
@@ -36,7 +36,7 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-    width: 50%; /* Anpassung der Button-Breite */
+    width: 80%; /* Anpassung der Button-Breite */
     cursor: pointer;
     margin: 10px 0; /* Abstand zur Eingabeliste */
 }
